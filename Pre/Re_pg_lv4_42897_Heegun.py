@@ -1,0 +1,30 @@
+"""https://programmers.co.kr/learn/courses/30/lessons/42897"""
+
+
+"""도둑질"""
+
+# git add week_11/Re_pg_lv4_42897_Heegun.py
+# git commit -m "[김희건] pg 도둑질"
+
+
+def solution(money): # 나누어서 생각하자
+
+    dp1 = [0] * len(money)
+    dp1[0] = money[0]
+    dp1[1] = money[0]
+    for i in range(2,len(money)-1):
+        dp1[i] = max(dp1[i-1], money[i] + dp1[i-2])
+
+    dp2 = [0] * len(money)
+    dp2[0] = 0
+    dp2[1] = money[1]
+
+    for i in range(2, len(money)): 
+        dp2[i] = max(dp2[i-1], money[i]+dp2[i-2])
+
+    return max(max(dp1), max(dp2))
+
+
+
+
+print(solution([1, 2, 3, 1]	))
