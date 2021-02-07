@@ -7,6 +7,7 @@
 # 메모리 초과
 
 
+
 def cyclone():
 
     max_num = len(board)**2
