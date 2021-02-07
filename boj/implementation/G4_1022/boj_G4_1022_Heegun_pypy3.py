@@ -9,7 +9,6 @@
 # pypy3 통과  python3 시간초과
 
 
-
 def cyclone(r1,c1,r2,c2,total_num):
 
     r = 0
