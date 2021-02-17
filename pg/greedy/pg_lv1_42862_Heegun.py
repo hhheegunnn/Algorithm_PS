@@ -4,7 +4,6 @@
 """ 체육복 """
 
 
-
 def solution(n, lost, reserve = list):
     
     reserve_ = set(reserve)-set(lost)
