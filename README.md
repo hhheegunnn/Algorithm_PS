@@ -21,6 +21,15 @@ board = [[1,2,3],[1,2,3],[1,2,3]]
 new_board = list(map(list,zip(*board)))
 
 ```
+
+## 2차원 리스트에서 최대값 찾기
+```python
+array = [[1,2,3],[4,5,6],[7,8,9]]
+
+max_ = max(map(max,array))
+
+print(max_)
+```
   
 
 
