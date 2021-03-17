@@ -30,7 +30,28 @@ max_ = max(map(max,array))
 
 print(max_)
 ```
-  
+
+## deepcopy - 깊은 복사
+```python
+array = [1,2,3]
+
+b = array[:]
+c = array
+
+array.append(4)
+
+print(array,b,c)
+```
+
+### 리스트에서 중복제거
+```python
+array = [1,2,3,1,4,3]
+
+array = list(set(array))
+
+print(array)
+```
+
 
 
 
