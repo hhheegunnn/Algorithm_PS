@@ -53,6 +53,16 @@ array = list(set(array))
 print(array)
 ```
 
+### lambda 의 활용
+```python
+array = [1,2,3,1,4,3]
+
+array2 = list(map(lambda x : x-1 , array))
+
+print(array2)
+# 0,1,2,0,3,2
+```
+
 
 
 
