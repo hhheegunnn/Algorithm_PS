@@ -108,7 +108,7 @@ def move_air(cr,dir):
         # 3. 우변
         for i in range(0, cr):
             board[i][C - 1] = board[i + 1][C - 1]
-        # 4. 아래변
+        # 4. 
         for j in range(C - 1, 1, -1):
             board[cr][j] = board[cr][j - 1]
     else:
